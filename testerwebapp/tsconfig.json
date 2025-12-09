@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs"
+  },
+  "files": [],
+  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }],
+  "exclude": ["node_modules"],
+  "baseUrl": ".",
+  "paths": {
+    "@/*": ["src/*"]
+  }
+}

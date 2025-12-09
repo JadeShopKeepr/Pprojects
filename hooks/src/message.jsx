@@ -1,8 +1,15 @@
 import { Suspense, use } from 'react';
 
 function Message({ MessagePromise }) {
-  const messageContent = use(MessagePromise);
-  return <p>Here is the message: {messageContent}</p>;
+  const messageContents = use(Promise.all([MessagePromise, MessagePromise]));
+  return (
+    <p>
+      Here is the message:{' '}
+      {messageContents.map((el) => (
+        <div>{el}</div>
+      ))}
+    </p>
+  );
 }
 
 export function MessageContainer({ messagePromise }) {
