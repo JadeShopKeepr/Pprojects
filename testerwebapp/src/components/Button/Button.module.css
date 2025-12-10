@@ -15,21 +15,29 @@ button {
   color: var(--text-invert);
   opacity: 0px;
   cursor: pointer;
-}
 
-.contained:hover {
-  background-color: var(--bgbrand-hover);
-  border-color: var(--bgbrand-hover);
-}
-.contained:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px rgba(25, 118, 210, 0.3);
+  &:hover {
+    background-color: var(--bgbrand-hover);
+    border-color: var(--bgbrand-hover);
+  }
+
+  &:active {
+    border-color: var(--bgbrand-hover);
+    border: 2px solid;
+  }
+
+  &:disabled {
+    background-color: var(--bgdisabled);
+    border-color: var(--bgdisabled);
+    color: var(--bgbrand);
+    cursor: auto;
+  }
 }
 
 .outlined {
   background-color: transparent;
   color: #1976d2;
-  border: 2px solid #1976d2;
+  border: 1px solid #1976d2;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;

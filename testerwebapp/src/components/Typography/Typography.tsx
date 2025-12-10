@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import styles from './Typography.module.css';
 
 type TypographyTag = 'h1' | 'h2' | 'h3' | 'p' | 'div';
 type TypographyVariant = 'title' | 'subtitle' | 'caption';
@@ -19,7 +18,7 @@ export const Typography = <Tag extends TypographyTag = 'div'>({
 }: TypographyProps<Tag>) => {
   const Component = tag;
   return (
-    <Component className={clsx(styles[variant], className)} {...props}>
+    <Component className={clsx(variant, className)} {...props}>
       {children}
     </Component>
   );
