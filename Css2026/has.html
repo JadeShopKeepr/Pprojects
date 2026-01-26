@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>has</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
+      }
+      .box:has(span) {
+        border: 2px solid red;
+        padding: 10px;
+        margin: 10px;
+      }
+      .box:has(div > button) {
+        background-color: lightblue;
+        border-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"><p>box without text</p></div>
+    <div class="box">
+      <p>box with text</p>
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, voluptatibus.</span>
+    </div>
+    <div class="box">
+      <p>box with button</p>
+      <div class=""><button>Click Me!</button></div>
+    </div>
+  </body>
+</html>
