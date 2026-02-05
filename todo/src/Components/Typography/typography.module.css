@@ -1,0 +1,54 @@
+:root {
+  --color-dark: #383d3b; /* Main Text & Titles */
+  --color-bg: #eee5e9; /* Page Background */
+  --color-grey: #7c7c7c; /* Muted Text */
+  --color-cyan-light: #92dce5; /* Subtle Accents */
+  --color-cyan-bright: #52dee5; /* Strong Accents / Links */
+
+  --size-title: 2.5rem;
+  --size-subtitle: 1.25rem;
+  --size-text: 1rem;
+  --size-caption: 0.75rem;
+}
+
+.title,
+.subtitle,
+.text,
+.caption {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--color-dark);
+}
+
+.title {
+  font-size: var(--size-title);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  border-left: 4px solid var(--color-cyan-bright);
+  padding-left: 1rem;
+}
+
+.subtitle {
+  font-size: var(--size-subtitle);
+  font-weight: 500;
+  color: var(--color-grey);
+  line-height: 1.4;
+}
+
+.text {
+  font-size: var(--size-text);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.caption {
+  font-size: var(--size-caption);
+  color: var(--color-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  background: var(--color-cyan-light);
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+}

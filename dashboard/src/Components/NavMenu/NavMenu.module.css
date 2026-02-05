@@ -1,0 +1,52 @@
+.nav {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navWrapper {
+  width: 90%;
+  overflow: hidden;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  padding: 8px 0px;
+  margin: 0;
+}
+
+.navItem {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 16px;
+  border: 1px solid #587ef7;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.sliderButton {
+  all: unset;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #587ef7;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left {
+  right: 50px;
+}
+
+.right {
+  right: 4px;
+}
