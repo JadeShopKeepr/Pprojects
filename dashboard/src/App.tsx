@@ -1,14 +1,13 @@
-import { Header } from './Components';
-import styles from './App.module.css';
-import NavMenu from './Components/NavMenu/NavMenu';
+import { Button } from '@/components/ui/button';
 
-export const App = () => {
+import './App.css';
+
+function App() {
   return (
-    <div className={styles.wrapper}>
-      <Header />
-      <div className={styles.container}>
-        <NavMenu />
-      </div>
+    <div className='flex min-h-svh flex-col items-center justify-center'>
+      <Button>Click me</Button>
     </div>
   );
-};
+}
+
+export default App;
